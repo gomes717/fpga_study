@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10CL016YF484) Path("C:/Users/guigu/Documents/Projects/fpga/03/output_files/") File("Counter.sof") MfrSpec(OpMask(1));
+		Device PartName(10CL016Y) Path("C:/Users/guigu/Documents/Projects/fpga/03/output_files/") File("output_file.jic") MfrSpec(OpMask(1) SEC_Device(EPCQ64) Child_OpMask(1 1));
 
 ChainEnd;
 

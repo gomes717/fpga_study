@@ -5,8 +5,7 @@ use ieee.numeric_std.all;
 entity Counter is 
 	port( clk	: in std_logic;
 			sel 	: out unsigned(2 downto 0);
-			leds 	: out unsigned(7 downto 0);
-			led_clk : out std_logic
+			leds 	: out unsigned(7 downto 0)
 		 );
 end entity Counter;
 
@@ -29,7 +28,6 @@ begin
 	multi : MultiDisplay port map(clk => clk, val => val_un, sel => sel, leds => leds);
 	process(clk)
 	begin
-		led_clk <= clk;
 		if rising_edge(clk) then
 			if(count = 5000000) then
 				count <= "0000000000000000000000000000";
